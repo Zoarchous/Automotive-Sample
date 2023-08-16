@@ -25,7 +25,6 @@ val navigateAction = Action.Builder()
 
 
 Особое внимание следует обратить на Manifest файлы модулей :car-app-service, :automotive и :app. Там есть комментарии от гугла. К пунктам без гугловских комментов добавил свои.
-Еще раз обращаю внимание, что лучше самостоятельно пройтись по всем пунктам по ссылке https://developer.android.com/codelabs/car-app-library-fundamentals#0 для лучшего понимания.
 
 
 
