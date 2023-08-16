@@ -2,6 +2,20 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--
+         Первые две фичи являются обязательными. Описание из codelabs:
+
+         android.hardware.type.automotive is a system feature that indicates that the device itself
+         is a vehicle (see FEATURE_AUTOMOTIVE for more details). Only apps that mark this feature
+         as required can be submitted to an Automotive OS track on the Play Console
+         (and apps submitted to other tracks cannot require this feature).
+
+         android.software.car.templates_host is a system feature only present in vehicles
+         that have the template host required to run template apps.
+
+         Остальные фичи стоят как false, т.к. не все машины могут иметь такие фичи.
+       -->
+
     <uses-feature
         android:name="android.hardware.type.automotive"
         android:required="true" />
@@ -49,8 +63,8 @@
             </intent-filter>
 
             <!--
-                This <meta-data> element tells the operating system to allow the Activity to run
-                even while UX restrictions are in place (i.e. while the vehicle is in motion)
+                Если установлено в true пользователь сможет запускать приложение находясь в движении.
+                В противном случае система не позволит запустить приложение во время движения.
             -->
             <meta-data
                 android:name="distractionOptimized"

@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Places">
 
+        <!--
+          Файл ниже считывается Android Auto и дает ему понимание о возможностях нашего приложения.
+          В данном случае о том, что мы используем Templates из  Car App Library. Также информация
+          используется для настройки различного поведения по типу добавления приложения в лайнчер
+          Android Auto и открытие его через нотификации.
+       -->
+
         <meta-data
             android:name="com.google.android.gms.car.application"
             android:resource="@xml/automotive_app_desc" />

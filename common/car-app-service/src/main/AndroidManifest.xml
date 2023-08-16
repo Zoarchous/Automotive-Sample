@@ -37,6 +37,11 @@
             android:name="androidx.car.app.minCarApiLevel"
             android:value="1" />
 
+        <!--
+           <action> позволяет хосту найти наще приложение
+           <category> указывает категорию приложения согласно списку допустимых категорий
+       -->
+
         <service
             android:name="com.example.places.carappservice.PlacesCarAppService"
             android:exported="true">
